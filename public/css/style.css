@@ -1,0 +1,92 @@
+:root{
+  --color-primery: #006634;
+  --color-secoundery : #FFCC00;
+  --color-shadow : rgba(102, 49, 0, .7);
+  --color-base : #fff;
+  --color-text : #663100;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* general konfigurasi */
+button,
+input{
+  appearance: none;
+  border: none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: var(--color-primery);
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  background-color: var(--color-primery);
+  color: var(--color-text);
+}
+
+/* login start */
+.container-authentication{
+  backdrop-filter: blur(10px);
+  background-color: var(--color-base);
+  width: 30%;
+  height: 100%;
+  margin: 100px auto;
+  padding: 3rem 2rem;
+  border-radius: 0.7rem;
+  border: 0.3rem solid var(--color-secoundery) ;
+  box-shadow: 0 0 10px var(--color-shadow);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-authentication .header-authentication{
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-authentication .header-authentication img{
+  width: 100px;
+  height: 100px;
+}
+.container-authentication .header-authentication h3{
+  font-weight: 700;
+}
+.container-authentication .body-authentication ul{
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  font-weight: 700;
+}
+.container-authentication .body-authentication ul li input{
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-secoundery);
+  color: var(--color-secoundery);
+}
+.container-authentication .body-authentication ul li input::placeholder{
+  color: var(--color-shadow);
+}
+.container-authentication .body-authentication ul li button{
+  padding: 0.5rem 2rem;
+  letter-spacing: 2px;
+  color: var(--color-secoundery);
+  font-weight: 700;
+  background-color: var(--color-primery);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+.container-authentication .body-authentication ul li button:hover{
+  background-color: var(--color-secoundery);
+  color: var(--color-text);
+}
+/* login end */
